@@ -71,7 +71,7 @@ SUITE(DecryptTest)
         CHECK_EQUAL(true, result_correct == pointer->decrypt(cipher_text));
     }
     TEST_FIXTURE(KeyAB_fixture, Smallletters) {
-        wstring cipher_text = L"агведжёизкймлонрптсфуцхшчъщьыюэая";;
+        wstring cipher_text = L"агведжёизкймлонрптсфуцхшчъщьыюэая";
         CHECK_THROW(pointer->decrypt(cipher_text), cipher_error);
     }
     TEST_FIXTURE(KeyAB_fixture,LargeAndSmallLetters ) {
