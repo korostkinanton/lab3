@@ -19,7 +19,7 @@ private:
 public:
     modAlphaCipher()=delete;
     modAlphaCipher(const int& key) :newkey(key) {};
-    modAlphaCipher(const string& skey);
+    //modAlphaCipher(const string& skey);
     //modAlphaCipher(const int k) 
     string encrypt(const string& open_st);   
     string decrypt(const string& cipher_st);
