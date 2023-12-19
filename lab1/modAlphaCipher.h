@@ -15,7 +15,6 @@ class modAlphaCipher
 private:
     int newkey;
     string getValidOpenText(const string & s);
-    string getValidKey(const string & newkey);
 public:
     modAlphaCipher()=delete;
     modAlphaCipher(const int& key) :newkey(key) {};
